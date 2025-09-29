@@ -3,6 +3,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
         DataService ds = new DataService();
 
         Console.Title = "Спринт #1 | Выполнил: Свайкин В. Е. | AСОиУб-25-1";
@@ -29,7 +30,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ                                                                         *");
         Console.WriteLine("*************************************************************************************");
 
-        Console.WriteLine("23.6 руб. - это "+ds.NumberToMoney(x));
+        Console.WriteLine(""+ds.NumberToMoney(x));
         Console.ReadLine();
     }
 }

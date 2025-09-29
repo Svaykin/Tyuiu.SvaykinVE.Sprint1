@@ -5,7 +5,7 @@ namespace Tyuiu.SvaykinVE.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-            return (int)number + " руб. " + (int)((number - (int)number) * 100)+" коп.";
+            return number+" руб. - это "+(int)number + " руб. " + (int)((number - (int)number) * 100)+" коп.";
         }
     }
 }
